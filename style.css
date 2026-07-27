@@ -1,0 +1,380 @@
+/* ====================================
+   ESTILOS GENERALES Y VARIABLES
+   ==================================== */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #ecf0f1;
+    --dark-text: #2c3e50;
+    --light-text: #7f8c8d;
+    --border-color: #bdc3c7;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ====================================
+   ENCABEZADO
+   ==================================== */
+
+.header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    opacity: 0.95;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.personal-info {
+    font-size: 0.95rem;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+/* ====================================
+   CONTENEDOR PRINCIPAL
+   ==================================== */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+/* ====================================
+   SECCIONES
+   ==================================== */
+
+.section {
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--light-bg);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+}
+
+.section p {
+    color: var(--light-text);
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* ====================================
+   LISTA DE HABILIDADES
+   ==================================== */
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.skills-list li {
+    background: var(--light-bg);
+    padding: 12px 15px;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.skills-list li:hover {
+    background: #d5dbdb;
+    transform: translateX(5px);
+    border-left-color: var(--accent-color);
+}
+
+/* ====================================
+   TARJETAS DE EXPERIENCIA
+   ==================================== */
+
+.experience-card {
+    background: var(--light-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 5px solid var(--secondary-color);
+    transition: var(--transition);
+}
+
+.experience-card:hover {
+    box-shadow: 0 5px 20px rgba(52, 152, 219, 0.2);
+    transform: translateY(-5px);
+    border-left-color: var(--accent-color);
+}
+
+.experience-card h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.company {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.period {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.certification-desc {
+    font-size: 0.95rem;
+    color: var(--light-text);
+    margin-top: 10px;
+}
+
+.experience-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-card li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 8px;
+    color: var(--light-text);
+}
+
+.experience-card li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+/* ====================================
+   PIE DE PÁGINA
+   ==================================== */
+
+.footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+    padding-bottom: 2px;
+}
+
+/* ====================================
+   RESPONSIVE DESIGN
+   ==================================== */
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header h2 {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    .section h3 {
+        font-size: 1.4rem;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .section p {
+        text-align: left;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-width: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 25px 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header h2 {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .section h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .personal-info {
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        padding: 20px 15px;
+        border-radius: 10px;
+    }
+
+    .footer h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ====================================
+   EFECTOS ADICIONALES
+   ==================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Scroll suave para usuarios con prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
