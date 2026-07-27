@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Juan Pablo González Peñaloza</title>
+</head>
+<body>
+
+    <!-- Encabezado (<header>): Requisito de estructura obligatoria 1 -->
+    <header>
+        <!-- Requisito de contenido: Nombre completo -->
+        <h1>Juan Pablo González Peñaloza</h1>
+        <!-- Requisito de contenido: Rol o profesión -->
+        <h2>Técnico en Sistemas (Prácticante)</h2>
+        <!-- Requisito de contenido: Imagen de perfil (genérica según la instrucción) -->
+        <img src="https://via.placeholder.com/150" alt="Foto de perfil genérica de Juan Pablo González">
+        <p>C.C. 79.926.235 de Bogotá | 44 años</p>
+    </header>
+
+    <!-- Contenido principal (<main>): Requisito de estructura obligatoria 2 -->
+    <main>
+
+        <!-- Sección 1: Perfil profesional (<section>) -->
+        <section>
+            <h3>Perfil Profesional</h3>
+            <!-- Descripción breve según datos proporcionados -->
+            <p>Técnico en sistemas en etapa práctica con sólida experiencia en soporte técnico y una destacada trayectoria en atención al cliente. Me caracterizo por mi capacidad para resolver problemas técnicos con eficiencia y brindar un servicio al usuario de alta calidad. Actualmente aplico y fortalezco mis conocimientos en el entorno del sector salud.</p>
+        </section>
+
+        <!-- Sección 2: Habilidades (<section>) -->
+        <section>
+            <h3>Habilidades</h3>
+            <!-- Requisito de contenido: Usar <ul> o <ol> -->
+            <ul>
+                <li>Soporte técnico de primer y segundo nivel (Hardware y Software).</li>
+                <li>Mantenimiento preventivo y correctivo de computadores.</li>
+                <li>Atención al cliente y resolución de conflictos.</li>
+                <li>Manejo de herramientas de ofimática (Office).</li>
+                <li>Configuración de redes básicas.</li>
+                <li>Capacidad de adaptación y aprendizaje continuo.</li>
+            </ul>
+        </section>
+
+        <!-- Sección 3: Formación o experiencia (<section>) -->
+        <section>
+            <h3>Experiencia Laboral y Formación</h3>
+            
+            <!-- Cada elemento debe ir dentro de un <article> según la instrucción -->
+            <article>
+                <h4>Soporte Técnico / Prácticante</h4>
+                <p><strong>Clínica Médical de Bogotá</strong> | Bogotá, Colombia</p>
+                <p><em>Actualmente</em></p>
+                <ul>
+                    <li>Brindar soporte técnico presencial y remoto a los usuarios de la clínica.</li>
+                    <li>Mantenimiento de equipos de cómputo y periféricos.</li>
+                    <li>Asegurar la conectividad y el correcto funcionamiento de los sistemas.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Atención al Cliente</h4>
+                <p><strong>[Nombre de Empresa Anterior o Sector]</strong> | Bogotá, Colombia</p>
+                <p><em>[Año de inicio] – [Año de fin]</em></p>
+                <ul>
+                    <li>Gestión de requerimientos y PQRs de usuarios.</li>
+                    <li>Fidelización y servicio post-venta.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>Técnico en Sistemas (Etapa Practica)</h4>
+                <p><strong>[INSTITUTO I3]</strong></p>
+                <p><em>[Año de finalización de clases]</2026></p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Pie de página (<footer>): Requisito de estructura obligatoria 4 -->
+    <footer>
+        <h3>Contacto</h3>
+        <!-- Requisito de contenido -->
+        <p>Correo electrónico: <a href="mailto:jagem82@gmail.com">jagem82@gmail.com</a></p>
+        <p>Ciudad y país: Bogotá, Colombia</p>
+        <p>Año actual: 2026</p>
+    </footer>
+
+</body>
+</html>
+
